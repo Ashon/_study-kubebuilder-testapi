@@ -4,4 +4,7 @@ resources:
 - group: user
   kind: User
   version: v1alpha1
+- group: user
+  kind: UserProfile
+  version: v1alpha1
 version: "2"

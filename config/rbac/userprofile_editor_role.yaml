@@ -1,0 +1,24 @@
+# permissions for end users to edit userprofiles.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: userprofile-editor-role
+rules:
+- apiGroups:
+  - user.testapi.ashon.dev
+  resources:
+  - userprofiles
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - user.testapi.ashon.dev
+  resources:
+  - userprofiles/status
+  verbs:
+  - get

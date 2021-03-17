@@ -1,0 +1,7 @@
+apiVersion: user.testapi.ashon.dev/v1alpha1
+kind: UserProfile
+metadata:
+  name: userprofile-sample
+spec:
+  # Add fields here
+  foo: bar
