@@ -1,0 +1,48 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - user.testapi.ashon.dev
+  resources:
+  - userprofiles
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - user.testapi.ashon.dev
+  resources:
+  - userprofiles/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - user.testapi.ashon.dev
+  resources:
+  - users
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - user.testapi.ashon.dev
+  resources:
+  - users/status
+  verbs:
+  - get
+  - patch
+  - update
