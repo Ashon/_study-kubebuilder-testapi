@@ -1,3 +1,7 @@
 domain: testapi.ashon.dev
 repo: testapi
+resources:
+- group: user
+  kind: User
+  version: v1alpha1
 version: "2"
